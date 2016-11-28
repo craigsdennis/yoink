@@ -20,8 +20,15 @@ nightmare
         for (let a of document.querySelectorAll('a').values()) {
             links.push(a.href);
         }
-        return links;
+        return {
+            links: links,
+            text: document.body.innerText
+        };
     })
     .end()
-    .then(links => console.log(links))
+    .then(data => {
+        console.log("Got the following links:", data.links);
+        console.log("And this wad of text:");
+        console.log(data.text);
+    })
     .catch(err => console.error("Uh oh", err));
