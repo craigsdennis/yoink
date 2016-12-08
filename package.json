@@ -10,6 +10,10 @@
   "author": "Craig Dennis <craigsdennis@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "nightmare": "^2.8.1"
+    "dateformat": "^2.0.0",
+    "deep-equal": "^1.0.1",
+    "jsonfile": "^2.4.0",
+    "nightmare": "^2.8.1",
+    "sanitize-filename": "^1.6.1"
   }
 }
